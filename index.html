@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D-Pesa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>D-Pesa</h1>
+
+    <!-- Tab Navigation -->
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'SendMoney')">Send Money</button>
+      <button class="tablinks" onclick="openTab(event, 'CheckBalance')">Check Balance</button>
+      <button class="tablinks" onclick="openTab(event, 'WithdrawCash')">Withdraw Cash</button>
+      <button class="tablinks" onclick="openTab(event, 'BuyAirtime')">Buy Airtime</button>
+    </div>
+
+    <!-- Tab Content -->
+    <div id="SendMoney" class="tabcontent">
+      <input type="text" id="send-amount" placeholder="Amount">
+      <input type="text" id="send-to" placeholder="Recipient Phone Number">
+      <button id="send-btn">Send Money</button>
+    </div>
+
+    <div id="CheckBalance" class="tabcontent" style="display:none;">
+      <button id="balance-btn">Check Balance</button>
+    </div>
+
+    <div id="WithdrawCash" class="tabcontent" style="display:none;">
+      <input type="text" id="withdraw-amount" placeholder="Amount">
+      <input type="text" id="withdraw-from" placeholder="Agent Number">
+      <button id="withdraw-btn">Withdraw</button>
+    </div>
+
+    <div id="BuyAirtime" class="tabcontent" style="display:none;">
+      <input type="text" id="airtime-amount" placeholder="Amount">
+      <input type="text" id="airtime-number" placeholder="Phone Number">
+      <button id="airtime-btn">Buy Airtime</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
